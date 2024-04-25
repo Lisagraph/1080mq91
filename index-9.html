@@ -1,0 +1,627 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>bookMQ</title>
+	
+<link href="style-9.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+<!-- Nav start -->	
+<div class="Nav">
+	
+	<div class="NavThird">
+		
+		<!-- bookTip is drag instuction for notebook - start -->
+		<div id="bookTip" class="bookTip">&nbsp;&nbsp;Click sides to flip pages, drag down and drop to read all pages &#128578;&nbsp;&nbsp;</div>
+		<!-- bookTip is drag instuction for notebook - end -->	
+
+	</div>
+
+	<div class="NavThird">
+		
+		<div class="headBtn">
+			<h4 class="headBtnInner"><strong>BACKGROUND</strong></h4>
+		</div>
+		
+		<div class="headBtn">
+			<h4 class="headBtnInner"><strong>EQUITISE</strong></h4>
+		</div>
+		
+		<div class="headBtn">
+			<h4 class="headBtnInner"><strong>CONTACT</strong></h4>
+		</div>
+
+	</div>
+
+	<div class="NavThird">
+	
+	</div>
+	
+</div>	
+<!-- Nav end -->
+	
+<!-- scrCon1 start -->	
+<div class="scrCon1">
+	
+</div>
+<!-- scrCon1 end -->
+
+<!-- scrCon2 - contains book - start -->
+<div class="scrCon2">
+
+		<!-- bookDropCon is outer drop book container - start -->
+		<div ondragstart="dragBook(event)" ondrag="dragging(event)" draggable="true" id="bookDropCon" class="bookDropCon">
+			
+		<!-- book start -->
+    	<div id="book" class="book">
+		
+        <!-- Paper 1 - contains icon grid - start -->
+        <div id="p1" class="paper">
+			
+			<!-- front cover - start -->
+            <div class="front">
+				
+				<!-- front cover - start -->
+                <div id="f1" class="front-content" style="border: 3px solid #fff;  background-color: #FFECDF; border-radius: 0 25px 25px 0px;">
+
+                </div>
+				<!-- front cover - end -->
+				
+            </div>
+			<!-- front cover - end -->
+			
+			<!-- back is the back of front cover - start -->
+            <div class="back">
+				<div id="b1" class="back-content" style="border: 3px solid #fff; background-color: #FFECDF; border-radius: 25px 0 0 25px;">
+						
+                </div>
+            </div>
+			<!-- back is the back of front cover - end -->
+			
+        </div>
+		<!-- Paper 1 - contains icon grid - end -->
+		
+        <!-- Paper 2 start -->
+        <div id="p2" class="paper">
+			
+            <div class="front">
+				
+                <div id="f2" class="front-content" style="border: 3px solid #fff;  background-color: #FFECDF; border-radius: 0 25px 25px 0px;">
+					
+				</div>
+				
+            </div>
+			
+            <div class="back">
+                <div id="b2" class="back-content" style="border: 3px solid #fff; background-color: #FFECDF; border-radius: 25px 0 0 25px;">
+						
+                </div>
+            </div>
+        </div>
+		<!-- Paper 2 end -->
+		
+        <!-- Paper 3 start -->
+        <div id="p3" class="paper">
+			
+            <div class="front">
+				
+                <div id="f3" class="front-content" style="border: 3px solid #fff;  background-color: #FFECDF; border-radius: 0 25px 25px 0px;">
+					
+                </div>
+				
+            </div>
+			
+            <div class="back" style="border-radius: 25px;">
+                <div id="b3" class="back-content" style="border: 3px solid #fff; background-color: #FFECDF; border-radius: 25px 0 0 25px;">
+					
+                </div>
+				
+            </div>
+			
+        </div>
+		 <!-- Paper 3 end -->
+		
+		<!-- Paper 4 start -->
+        <div id="p4" class="paper">
+			
+            <div class="front">
+				
+                <div id="f4" class="front-content" style="border: 3px solid #fff;  background-color: #FFECDF; border-radius: 0 25px 25px 0px;">
+					
+                </div>
+				
+            </div>
+			
+            	<div class="back">
+				
+                	<div id="b4" class="back-content"  style="border: 3px solid #fff; background-color: #FFECDF; border-radius: 25px 0 0 25px;">
+					
+                	</div>
+				
+            	</div>
+			
+        	</div>
+		<!-- Paper 4 end -->
+			
+		<!-- Paper 5 start -->
+        <div id="p5" class="paper">
+			
+            	<div class="back">
+				
+                	<div id="b5" class="back-content" style="border: 3px solid #fff;  background-color: #FFECDF; border-radius: 0 25px 25px 0px;">
+					
+                	</div>
+				
+            	</div>
+			
+        	</div>
+		<!-- Paper 5 end -->	
+			
+		<!-- spine no display start -->
+    	<div class="binderQueries">
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+			<div class="spiral"></div>
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+			<div class="spiral"></div>
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+          </div>
+		<!-- spine no display end -->	
+		
+    	</div>
+		<!-- book end -->
+			
+			<!-- spine start -->
+    		<div class="binder">
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+			<div class="spiral"></div>
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+			<div class="spiral"></div>
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+            <div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+			<div class="spiral"></div>
+          </div>
+			<!-- spine end -->
+	
+			<!-- Previous Button -->
+    		<button id="prev-btn">
+        	<i class="prev"><b>&lt;</b></i>
+        	</button>
+
+    		<!-- Next Button -->
+    		<button id="next-btn">
+        	<i class="next"><b>&gt;</b></i>
+    		</button>
+			
+		</div>
+		<!-- bookDropCon is outer drop book container - end -->
+	
+			<div id="bookFix" class="bookFix">
+			
+				<div id="bookScroll" class="bookScroll">
+				
+					<div id="bookContent" class="bookContent">		
+						
+						<!-- dropBookTarget is target container for notebook drag function - start -->
+						<div id="dropBookTarget" ondragover="allowDrop(event)" ondrop="drop(event)">
+						
+						</div>
+						<!-- dropBookTarget is target container for notebook drag function - end -->
+	
+					</div>
+	
+				</div>
+				
+			</div>
+	
+</div>
+<!-- scrCon2 - contains book - end -->
+
+<!-- scrCon3 start -->	
+<div class="scrCon3">
+	
+</div>
+<!-- scrCon3 end -->
+	
+<!-- FootBottom start -->
+<div class="FootBottom">
+
+		<div style="width: 100%; height: 100%;">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2700 -10 6000 5000">
+  <defs>
+    <style>
+      .EqcolLogo-1 {
+        stroke: #570060;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .EqcolLogo-1, .EqcolLogo-2 {
+        fill: none;
+      }
+
+      .EqcolLogo-2 {
+        stroke: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+      }
+
+      .EqcolLogo-3 {
+        fill: #6364ff;
+      }
+
+      .EqcolLogo-3, .EqcolLogo-4 {
+        stroke-width: 0px;
+      }
+
+      .EqcolLogo-4 {
+        fill: #570060;
+      }
+    </style>
+  </defs>
+  <g id="EqcolLogo">
+    <g>
+      <g>
+        <path class="EqcolLogo-2" d="m246.57,87.35c-.96.98-1.62,1.84-2.45,2.56-3.81,3.27-8.28,4.79-13.23,4.85-5.38.06-10.3-1.41-14.49-4.92-3.31-2.76-5.51-6.27-6.88-10.31-1.74-5.12-1.93-10.36-1.16-15.67.56-3.83,1.85-7.39,4.01-10.61,3.75-5.57,8.99-8.71,15.67-9.38,3.38-.34,6.71-.05,9.96,1.04,3.39,1.14,6.22,3.04,8.46,5.82.16.2.27.46.55.56.28-.33.14-.72.14-1.08.02-1.4.02-2.8,0-4.19,0-.54.2-.72.73-.72,3.1.02,6.2.01,9.3,0,.5,0,.69.2.66.67-.02.26,0,.53,0,.79,0,20.66,0,41.33,0,61.99,0,.11,0,.23,0,.34,0,1.11,0,1.12-1.11,1.12-3.02,0-6.05,0-9.07,0-1.12,0-1.13,0-1.13-1.1.01-6.88.03-13.75.05-20.63,0-.3,0-.59,0-1.16Zm-27.07-18.19c0,2.94.46,5.81,1.69,8.49,2.04,4.49,5.42,7.28,10.43,7.81,6.02.64,11.59-2.67,13.89-8.25,2.18-5.29,2.11-10.63.02-15.89-2.01-5.05-5.83-7.92-11.28-8.33-5.53-.41-9.79,1.79-12.52,6.67-1.64,2.94-2.21,6.16-2.22,9.49Z"/>
+        <path class="EqcolLogo-2" d="m454.37,72.34c.16,1.63.52,3.24,1.14,4.78,1.55,3.79,4.12,6.62,8.07,7.9,4.24,1.38,8.42,1.19,12.32-1.26,1.23-.77,2.23-1.81,2.99-3.04.4-.65.88-.89,1.65-.88,3.06.05,6.13.02,9.19.02.33,0,.67-.06,1.01.09.06.49-.18.9-.35,1.3-3.05,7.11-8.41,11.44-15.91,13.17-5.01,1.16-10.01.99-14.9-.54-5.54-1.74-9.91-5.08-12.87-10.13-3.14-5.35-4.04-11.16-3.54-17.25.32-3.98,1.46-7.7,3.46-11.16,2.35-4.08,5.65-7.16,9.89-9.19,5.78-2.76,11.85-3.24,18.03-1.72,6.23,1.53,10.9,5.22,13.94,10.89,2.49,4.65,3.39,9.66,3.22,14.88-.02.66.26,1.51-.23,1.95-.43.38-1.24.12-1.87.12-11.34-.02-22.69-.06-34.03-.08-.37,0-.76-.09-1.2.15Zm13.15-8.13h0c3.97-.01,7.93-.01,11.9-.02,1,0,1.03-.04.84-1.03-.29-1.53-.73-3.01-1.49-4.37-1.31-2.38-3.14-4.19-5.67-5.31-2.25-.99-4.6-1.19-6.99-.97-6.43.6-10.16,4.84-11.2,10.65-.18,1.03-.15,1.05.94,1.05,3.89,0,7.78,0,11.67,0Z"/>
+        <path class="EqcolLogo-2" d="m164.99,72.29c.08,1.8.56,3.51,1.26,5.13,1.56,3.64,4.12,6.35,7.93,7.59,4.29,1.39,8.5,1.18,12.41-1.31,1.23-.78,2.2-1.85,2.97-3.08.36-.58.78-.8,1.46-.79,3.14.04,6.28.01,9.41.02.3,0,.6-.06.94.12-.25,1.26-.84,2.4-1.46,3.51-3.29,5.88-8.31,9.44-14.85,10.92-4.97,1.13-9.92.98-14.79-.51-5.03-1.54-9.13-4.45-12.12-8.83-3.5-5.13-4.71-10.89-4.49-17,.14-3.93.99-7.7,2.76-11.24,2.43-4.87,6.04-8.56,11.01-10.8,6.81-3.08,13.77-3.24,20.73-.59,4.68,1.79,8.21,5.03,10.66,9.4,2.92,5.2,3.77,10.86,3.5,16.74-.03.57-.28.69-.77.68-1.59-.02-3.18-.01-4.76-.02-10.21-.02-20.42-.04-30.62-.06-.37,0-.75-.06-1.17.11Zm25.97-8.24c-.39-3.57-1.79-6.65-4.61-8.97-3.03-2.5-6.59-2.99-10.36-2.51-1.74.22-3.39.77-4.88,1.71-3.45,2.17-5.04,5.48-5.71,9.35-.07.39.06.57.46.57.23,0,.45,0,.68,0,7.74,0,15.48,0,23.22,0,.37,0,.76.08,1.19-.14Z"/>
+        <path class="EqcolLogo-2" d="m300.21,87.29c-.39.05-.44.4-.59.62-2.54,3.73-6.07,5.92-10.49,6.69-3.71.65-7.41.49-10.97-.75-4.16-1.45-7-4.37-8.66-8.42-1.11-2.72-1.66-5.56-1.82-8.49-.06-1.13-.09-2.27-.09-3.4,0-8.99,0-17.98,0-26.98,0-1.33-.13-1.24,1.2-1.24,2.95,0,5.9,0,8.85,0,1.43,0,1.25-.05,1.25,1.31,0,8.01,0,16.02,0,24.03,0,2.65.08,5.29.82,7.87.6,2.11,1.54,4,3.33,5.39.61.47,1.27.85,1.98,1.07,3.57,1.12,7.03,1.01,10.17-1.24,2.1-1.51,3.11-3.76,3.72-6.18.6-2.35.76-4.77.76-7.19,0-7.82,0-15.64,0-23.46,0-1.76-.25-1.58,1.55-1.58,2.84,0,5.67,0,8.51,0,1.38,0,1.25-.04,1.25,1.2,0,2.53,0,5.06,0,7.59,0,12.39.02,24.78.03,37.18,0,.57,0,1.13.04,1.7.03.48-.14.72-.64.68-.15-.01-.3,0-.45,0-2.84,0-5.67,0-8.51,0-1.13,0-1.13,0-1.14-1.09,0-1.47,0-2.95,0-4.42,0-.28.1-.59-.1-.87Z"/>
+        <path class="EqcolLogo-2" d="m402.12,78.34c1.47,0,2.95.04,4.42-.02.66-.03.93.21,1.13.81.53,1.6,1.39,3.01,2.62,4.18,1.59,1.51,3.49,2.36,5.66,2.63,2.76.34,5.45.17,7.9-1.3,1.6-.96,2.65-2.32,2.74-4.29.07-1.52-.58-2.61-1.79-3.44-1.27-.86-2.72-1.31-4.17-1.73-2.98-.86-5.97-1.65-8.95-2.51-2.33-.67-4.59-1.5-6.72-2.68-5.15-2.83-7.16-7.53-6.41-13.24.63-4.8,3.39-8.15,7.54-10.41,4.48-2.44,9.32-2.93,14.31-2.4,3.28.35,6.36,1.33,9.12,3.16,3.76,2.5,5.99,5.99,6.69,10.45.04.26.05.53.08.79.04.34-.13.49-.45.49-.15,0-.3,0-.45,0-2.72,0-5.45-.02-8.17.01-.6,0-.93-.14-1.18-.75-1.31-3.14-3.72-4.84-7.07-5.27-2.29-.3-4.53-.24-6.67.75-1.79.83-2.83,2.22-2.95,4.23-.09,1.62.58,2.86,1.97,3.68,1.75,1.03,3.69,1.54,5.62,2.06,3.25.87,6.54,1.59,9.7,2.75,2.06.75,4.06,1.64,5.86,2.93,2.38,1.71,3.91,3.98,4.4,6.88.87,5.11-.2,9.7-3.9,13.49-2.44,2.5-5.47,4-8.85,4.79-5.04,1.18-10.07,1.05-15.01-.46-4.71-1.44-8.21-4.37-10.37-8.84-.86-1.78-1.4-3.66-1.86-5.57-.27-1.14-.24-1.16.88-1.16,1.44,0,2.87,0,4.31,0Z"/>
+        <path class="EqcolLogo-2" d="m348.75,68.94c0-4.61,0-9.22,0-13.83,0-.23-.02-.46,0-.68.06-.59-.18-.79-.78-.78-1.51.03-3.02.01-4.54.01-.34,0-.68,0-1.02,0-.98-.01-.99-.01-.99-1,0-2.19.02-4.38-.01-6.57,0-.6.2-.79.78-.78,1.89.02,3.78.02,5.67,0,.86,0,.88-.02.88-.89,0-3.59,0-7.18,0-10.77,0-.26.01-.53,0-.79-.02-.41.12-.65.57-.62.11,0,.23,0,.34,0,3.18,0,6.35,0,9.53,0,.86,0,.87.02.87.89,0,3.7,0,7.41,0,11.11,0,1.06,0,1.07,1.05,1.08,2.38,0,4.76,0,7.15,0,.86,0,.88.02.88.87,0,2.19,0,4.38,0,6.57,0,.87-.02.88-.87.89-2.38,0-4.76,0-7.15,0-1.06,0-1.07,0-1.07,1.06,0,8.43,0,16.85,0,25.28,0,.99.12,1.96.41,2.91.47,1.53,1.49,2.49,3.05,2.89,1.3.34,2.62.31,3.94.2.74-.06.77-.04.77.71.01,2.27,0,4.53.01,6.8,0,.5-.14.79-.67.84-3.9.37-7.78.37-11.56-.87-4.36-1.43-6.59-4.57-7.13-9.02-.11-.94-.15-1.88-.15-2.83,0-4.23,0-8.46,0-12.7Z"/>
+        <path class="EqcolLogo-2" d="m377.15,69.45c0-7.63,0-15.26,0-22.9,0-1.27-.12-1.24,1.22-1.24,2.95,0,5.9,0,8.85,0,1.43,0,1.25-.04,1.25,1.31,0,12.62,0,25.24,0,37.86,0,2.72,0,5.44,0,8.16,0,1-.01,1.01-.99,1.01-3.1,0-6.2,0-9.3,0-1.02,0-1.02-.01-1.02-1.09,0-6.65,0-13.3,0-19.95v-3.17Z"/>
+        <path class="EqcolLogo-2" d="m334.38,69.58c0,7.52,0,15.04,0,22.55,0,.26-.02.53,0,.79.06.62-.25.76-.81.76-3.25-.02-6.5-.02-9.75,0-.62,0-.81-.25-.75-.81.02-.22,0-.45,0-.68v-45.45c0-.19,0-.38,0-.57.02-.84.02-.85.91-.85,3.18,0,6.35,0,9.53,0,.85,0,.86.02.87.9,0,3.7,0,7.4,0,11.11,0,4.08,0,8.16,0,12.24Z"/>
+        <path class="EqcolLogo-2" d="m328.68,38.34c-1.66,0-3.32,0-4.98,0-.81,0-.83-.03-.83-.82,0-2.94,0-5.89,0-8.83,0-.83.02-.85.8-.86,3.36-.01,6.72,0,10.08-.01.54,0,.72.19.72.73-.02,3.02-.02,6.04,0,9.06,0,.62-.24.76-.81.76-1.66-.03-3.32,0-4.98,0Z"/>
+        <path class="EqcolLogo-2" d="m382.81,27.82c1.66,0,3.32.02,4.98,0,.57,0,.8.17.79.77-.02,2.98,0,5.96-.01,8.94,0,.79-.02.81-.84.81-3.32,0-6.65,0-9.97.01-.57,0-.81-.16-.8-.77.02-3.02.02-6.04,0-9.06,0-.56.23-.72.75-.71,1.7.02,3.4,0,5.1,0Z"/>
+        <path class="EqcolLogo-2" d="m506.69,51.65c-4.35-.01-7.79-3.43-7.79-7.76,0-4.36,3.5-7.81,7.9-7.78,4.3.03,7.75,3.53,7.73,7.84-.02,4.33-3.46,7.71-7.84,7.7Z"/>
+        <path class="EqcolLogo-2" d="m510.61,48.43c-.73,0-1.32,0-1.91,0-.42,0-.58-.3-.75-.59-.44-.75-.87-1.5-1.32-2.25-.16-.27-.34-.54-.71-.4-.33.12-.22.44-.23.69-.01.68-.01,1.36,0,2.04,0,.32-.12.5-.46.5-.11,0-.23,0-.34,0-1.48,0-1.23,0-1.24-1.2,0-2.3,0-4.61,0-6.91,0-.81.02-.83.81-.84,1.1,0,2.19-.02,3.29.04,1.32.08,2.17.72,2.5,1.78.38,1.21,0,2.46-1.09,3.19-.53.35-.53.59-.22,1.07.57.87,1.15,1.75,1.67,2.86Zm-4.92-6.21c0,.23,0,.45,0,.68,0,.2.07.4.3.42.64.05,1.28.13,1.87-.21.38-.22.48-.57.44-.96-.04-.41-.28-.7-.69-.79-.29-.06-.6-.08-.9-.09-1.01-.02-1.02-.01-1.02.96Z"/>
+      </g>
+      <g>
+        <path class="EqcolLogo-2" d="m57.56,130.42c-.93-.55-1.99-.77-2.96-1.23-2.78-1.32-5.37-2.96-8.04-4.48-4.7-2.66-9.4-5.32-14.06-8.04-4.5-2.63-9.16-5-13.5-7.89-5.31-3.54-8.76-8.5-10.56-14.62-.69-2.36-.96-4.77-.96-7.23.02-11.95.01-23.91,0-35.86,0-8.02,3.1-14.64,8.99-20,1.51-1.37,3.23-2.46,5-3.47,6.49-3.71,12.96-7.44,19.45-11.14,4.18-2.38,8.35-4.77,12.56-7.1,2.48-1.37,5.18-2.17,7.98-2.6.18-.03.35-.11.52-.17,1.41-.03,2.81-.07,4.22-.08,4.64-.04,8.9,1.3,12.9,3.55,4.22,2.38,8.4,4.82,12.6,7.23,6.48,3.72,12.99,7.37,19.42,11.17,4.79,2.83,8.21,6.93,10.45,12.03,1.57,3.58,2.2,7.33,2.19,11.23-.03,11.65,0,23.31-.01,34.96-.01,7.63-2.77,14.13-8.21,19.48-1.83,1.8-3.99,3.18-6.21,4.45-4.33,2.48-8.67,4.96-13,7.44-5.84,3.34-11.66,6.72-17.53,10.02-5.8,3.26-11.99,4.25-18.54,2.94-.91-.18-1.77-.55-2.71-.57Zm55.36-61.47c0-5.33-.02-10.66,0-15.99,0-2.02-.31-3.98-.93-5.89-1.58-4.83-4.65-8.43-9.04-10.95-3.5-2-7.01-3.98-10.51-5.98-5.61-3.22-11.22-6.46-16.83-9.67-2.6-1.49-5.35-2.46-8.38-2.68-3.56-.27-6.96.25-10.12,1.9-2.98,1.56-5.88,3.27-8.8,4.94-6.68,3.82-13.35,7.64-20.01,11.49-6.59,3.8-9.96,9.56-10.03,17.12-.1,10.47-.02,20.95-.03,31.42,0,1.34.12,2.66.39,3.97,1.16,5.68,4.26,9.99,9.23,12.97,1.52.91,3.07,1.79,4.61,2.67,7.67,4.4,15.33,8.81,23.02,13.18,6.58,3.74,13.24,3.82,19.89.19,3.05-1.66,6.04-3.44,9.06-5.17,5.9-3.39,11.8-6.79,17.71-10.16,2.26-1.29,4.4-2.73,6.1-4.74,3.1-3.68,4.68-7.91,4.67-12.74-.01-5.29,0-10.58,0-15.88Z"/>
+        <path class="EqcolLogo-2" d="m79.63,74.33c-6.07,0-12.15-.01-18.22,0-1.69,0-3.15-.5-4.25-1.79-1.36-1.58-1.8-3.4-1.05-5.37.79-2.08,2.34-3.28,4.57-3.53.4-.04.81-.02,1.22-.02,8.3,0,16.59,0,24.89,0,1.38,0,1.43-.05,1.01-1.36-1.64-5.07-4.69-9.09-9.05-12.14-3.12-2.18-6.58-3.55-10.35-4-5.04-.61-9.81.34-14.21,2.9-5.38,3.13-9.1,7.65-10.85,13.63-2.07,7.06-.74,13.63,3.41,19.63,2.61,3.77,6.09,6.52,10.41,8.16,4.71,1.79,9.5,2.11,14.38.78,3.97-1.08,7.45-3.04,10.39-5.93.4-.39.8-.61,1.36-.61,3.81.01,7.63,0,11.44,0,.15,0,.3,0,.44.01.29.02.4.18.3.44-.08.21-.21.39-.32.58-3.31,5.67-7.87,10.01-13.69,13.07-6,3.16-12.39,4.43-19.11,3.84-6.69-.59-12.7-3.04-17.97-7.22-4.04-3.2-7.18-7.13-9.45-11.75-2.36-4.8-3.52-9.89-3.34-15.24.26-8.07,2.97-15.24,8.2-21.44,4.72-5.6,10.75-9.1,17.81-10.81,4.16-1.01,8.39-1.22,12.67-.64,8.2,1.12,15.01,4.82,20.55,10.88,4.48,4.89,7.31,10.65,8.41,17.2.55,3.26.62,6.55.1,9.83-.13.83-.13.85-.95.85-2.07.01-4.15,0-6.22,0-4.18,0-8.37,0-12.55,0Z"/>
+      </g>
+    </g>
+  </g>
+  <g id="EqcolLogo" data-name="EqcolLogo">
+    <g>
+      <g>
+        <path class="EqcolLogo-4" d="m246.39,87.35c-.96.98-1.62,1.84-2.45,2.56-3.81,3.27-8.28,4.79-13.23,4.85-5.38.06-10.3-1.41-14.49-4.92-3.31-2.76-5.51-6.27-6.88-10.31-1.74-5.12-1.93-10.36-1.16-15.67.56-3.83,1.85-7.39,4.01-10.61,3.75-5.57,8.99-8.71,15.67-9.38,3.38-.34,6.71-.05,9.96,1.04,3.39,1.14,6.22,3.04,8.46,5.82.16.2.27.46.55.56.28-.33.14-.72.14-1.08.02-1.4.02-2.8,0-4.19,0-.54.2-.72.73-.72,3.1.02,6.2.01,9.3,0,.5,0,.69.2.66.67-.02.26,0,.53,0,.79,0,20.66,0,41.33,0,61.99,0,.11,0,.23,0,.34,0,1.11,0,1.12-1.11,1.12-3.02,0-6.05,0-9.07,0-1.12,0-1.13,0-1.13-1.1.01-6.88.03-13.75.05-20.63,0-.3,0-.59,0-1.16Zm-27.07-18.19c0,2.94.46,5.81,1.69,8.49,2.04,4.49,5.42,7.28,10.43,7.81,6.02.64,11.59-2.67,13.89-8.25,2.18-5.29,2.11-10.63.02-15.89-2.01-5.05-5.83-7.92-11.28-8.33-5.53-.41-9.79,1.79-12.52,6.67-1.64,2.94-2.21,6.16-2.22,9.49Z"/>
+        <path class="EqcolLogo-4" d="m454.19,72.34c.16,1.63.52,3.24,1.14,4.78,1.55,3.79,4.12,6.62,8.07,7.9,4.24,1.38,8.42,1.19,12.32-1.26,1.23-.77,2.23-1.81,2.99-3.04.4-.65.88-.89,1.65-.88,3.06.05,6.13.02,9.19.02.33,0,.67-.06,1.01.09.06.49-.18.9-.35,1.3-3.05,7.11-8.41,11.44-15.91,13.17-5.01,1.16-10.01.99-14.9-.54-5.54-1.74-9.91-5.08-12.87-10.13-3.14-5.35-4.04-11.16-3.54-17.25.32-3.98,1.46-7.7,3.46-11.16,2.35-4.08,5.65-7.16,9.89-9.19,5.78-2.76,11.85-3.24,18.03-1.72,6.23,1.53,10.9,5.22,13.94,10.89,2.49,4.65,3.39,9.66,3.22,14.88-.02.66.26,1.51-.23,1.95-.43.38-1.24.12-1.87.12-11.34-.02-22.69-.06-34.03-.08-.37,0-.76-.09-1.2.15Zm13.15-8.13h0c3.97-.01,7.93-.01,11.9-.02,1,0,1.03-.04.84-1.03-.29-1.53-.73-3.01-1.49-4.37-1.31-2.38-3.14-4.19-5.67-5.31-2.25-.99-4.6-1.19-6.99-.97-6.43.6-10.16,4.84-11.2,10.65-.18,1.03-.15,1.05.94,1.05,3.89,0,7.78,0,11.67,0Z"/>
+        <path class="EqcolLogo-4" d="m164.8,72.29c.08,1.8.56,3.51,1.26,5.13,1.56,3.64,4.12,6.35,7.93,7.59,4.29,1.39,8.5,1.18,12.41-1.31,1.23-.78,2.2-1.85,2.97-3.08.36-.58.78-.8,1.46-.79,3.14.04,6.28.01,9.41.02.3,0,.6-.06.94.12-.25,1.26-.84,2.4-1.46,3.51-3.29,5.88-8.31,9.44-14.85,10.92-4.97,1.13-9.92.98-14.79-.51-5.03-1.54-9.13-4.45-12.12-8.83-3.5-5.13-4.71-10.89-4.49-17,.14-3.93.99-7.7,2.76-11.24,2.43-4.87,6.04-8.56,11.01-10.8,6.81-3.08,13.77-3.24,20.73-.59,4.68,1.79,8.21,5.03,10.66,9.4,2.92,5.2,3.77,10.86,3.5,16.74-.03.57-.28.69-.77.68-1.59-.02-3.18-.01-4.76-.02-10.21-.02-20.42-.04-30.62-.06-.37,0-.75-.06-1.17.11Zm25.97-8.24c-.39-3.57-1.79-6.65-4.61-8.97-3.03-2.5-6.59-2.99-10.36-2.51-1.74.22-3.39.77-4.88,1.71-3.45,2.17-5.04,5.48-5.71,9.35-.07.39.06.57.46.57.23,0,.45,0,.68,0,7.74,0,15.48,0,23.22,0,.37,0,.76.08,1.19-.14Z"/>
+        <path class="EqcolLogo-4" d="m300.02,87.29c-.39.05-.44.4-.59.62-2.54,3.73-6.07,5.92-10.49,6.69-3.71.65-7.41.49-10.97-.75-4.16-1.45-7-4.37-8.66-8.42-1.11-2.72-1.66-5.56-1.82-8.49-.06-1.13-.09-2.27-.09-3.4,0-8.99,0-17.98,0-26.98,0-1.33-.13-1.24,1.2-1.24,2.95,0,5.9,0,8.85,0,1.43,0,1.25-.05,1.25,1.31,0,8.01,0,16.02,0,24.03,0,2.65.08,5.29.82,7.87.6,2.11,1.54,4,3.33,5.39.61.47,1.27.85,1.98,1.07,3.57,1.12,7.03,1.01,10.17-1.24,2.1-1.51,3.11-3.76,3.72-6.18.6-2.35.76-4.77.76-7.19,0-7.82,0-15.64,0-23.46,0-1.76-.25-1.58,1.55-1.58,2.84,0,5.67,0,8.51,0,1.38,0,1.25-.04,1.25,1.2,0,2.53,0,5.06,0,7.59,0,12.39.02,24.78.03,37.18,0,.57,0,1.13.04,1.7.03.48-.14.72-.64.68-.15-.01-.3,0-.45,0-2.84,0-5.67,0-8.51,0-1.13,0-1.13,0-1.14-1.09,0-1.47,0-2.95,0-4.42,0-.28.1-.59-.1-.87Z"/>
+        <path class="EqcolLogo-4" d="m401.93,78.34c1.47,0,2.95.04,4.42-.02.66-.03.93.21,1.13.81.53,1.6,1.39,3.01,2.62,4.18,1.59,1.51,3.49,2.36,5.66,2.63,2.76.34,5.45.17,7.9-1.3,1.6-.96,2.65-2.32,2.74-4.29.07-1.52-.58-2.61-1.79-3.44-1.27-.86-2.72-1.31-4.17-1.73-2.98-.86-5.97-1.65-8.95-2.51-2.33-.67-4.59-1.5-6.72-2.68-5.15-2.83-7.16-7.53-6.41-13.24.63-4.8,3.39-8.15,7.54-10.41,4.48-2.44,9.32-2.93,14.31-2.4,3.28.35,6.36,1.33,9.12,3.16,3.76,2.5,5.99,5.99,6.69,10.45.04.26.05.53.08.79.04.34-.13.49-.45.49-.15,0-.3,0-.45,0-2.72,0-5.45-.02-8.17.01-.6,0-.93-.14-1.18-.75-1.31-3.14-3.72-4.84-7.07-5.27-2.29-.3-4.53-.24-6.67.75-1.79.83-2.83,2.22-2.95,4.23-.09,1.62.58,2.86,1.97,3.68,1.75,1.03,3.69,1.54,5.62,2.06,3.25.87,6.54,1.59,9.7,2.75,2.06.75,4.06,1.64,5.86,2.93,2.38,1.71,3.91,3.98,4.4,6.88.87,5.11-.2,9.7-3.9,13.49-2.44,2.5-5.47,4-8.85,4.79-5.04,1.18-10.07,1.05-15.01-.46-4.71-1.44-8.21-4.37-10.37-8.84-.86-1.78-1.4-3.66-1.86-5.57-.27-1.14-.24-1.16.88-1.16,1.44,0,2.87,0,4.31,0Z"/>
+        <path class="EqcolLogo-4" d="m348.56,68.94c0-4.61,0-9.22,0-13.83,0-.23-.02-.46,0-.68.06-.59-.18-.79-.78-.78-1.51.03-3.02.01-4.54.01-.34,0-.68,0-1.02,0-.98-.01-.99-.01-.99-1,0-2.19.02-4.38-.01-6.57,0-.6.2-.79.78-.78,1.89.02,3.78.02,5.67,0,.86,0,.88-.02.88-.89,0-3.59,0-7.18,0-10.77,0-.26.01-.53,0-.79-.02-.41.12-.65.57-.62.11,0,.23,0,.34,0,3.18,0,6.35,0,9.53,0,.86,0,.87.02.87.89,0,3.7,0,7.41,0,11.11,0,1.06,0,1.07,1.05,1.08,2.38,0,4.76,0,7.15,0,.86,0,.88.02.88.87,0,2.19,0,4.38,0,6.57,0,.87-.02.88-.87.89-2.38,0-4.76,0-7.15,0-1.06,0-1.07,0-1.07,1.06,0,8.43,0,16.85,0,25.28,0,.99.12,1.96.41,2.91.47,1.53,1.49,2.49,3.05,2.89,1.3.34,2.62.31,3.94.2.74-.06.77-.04.77.71.01,2.27,0,4.53.01,6.8,0,.5-.14.79-.67.84-3.9.37-7.78.37-11.56-.87-4.36-1.43-6.59-4.57-7.13-9.02-.11-.94-.15-1.88-.15-2.83,0-4.23,0-8.46,0-12.7Z"/>
+        <path class="EqcolLogo-4" d="m376.96,69.45c0-7.63,0-15.26,0-22.9,0-1.27-.12-1.24,1.22-1.24,2.95,0,5.9,0,8.85,0,1.43,0,1.25-.04,1.25,1.31,0,12.62,0,25.24,0,37.86,0,2.72,0,5.44,0,8.16,0,1-.01,1.01-.99,1.01-3.1,0-6.2,0-9.3,0-1.02,0-1.02-.01-1.02-1.09,0-6.65,0-13.3,0-19.95v-3.17Z"/>
+        <path class="EqcolLogo-4" d="m334.19,69.58c0,7.52,0,15.04,0,22.55,0,.26-.02.53,0,.79.06.62-.25.76-.81.76-3.25-.02-6.5-.02-9.75,0-.62,0-.81-.25-.75-.81.02-.22,0-.45,0-.68v-45.45c0-.19,0-.38,0-.57.02-.84.02-.85.91-.85,3.18,0,6.35,0,9.53,0,.85,0,.86.02.87.9,0,3.7,0,7.4,0,11.11,0,4.08,0,8.16,0,12.24Z"/>
+        <path class="EqcolLogo-4" d="m328.5,38.34c-1.66,0-3.32,0-4.98,0-.81,0-.83-.03-.83-.82,0-2.94,0-5.89,0-8.83,0-.83.02-.85.8-.86,3.36-.01,6.72,0,10.08-.01.54,0,.72.19.72.73-.02,3.02-.02,6.04,0,9.06,0,.62-.24.76-.81.76-1.66-.03-3.32,0-4.98,0Z"/>
+        <path class="EqcolLogo-4" d="m382.62,27.82c1.66,0,3.32.02,4.98,0,.57,0,.8.17.79.77-.02,2.98,0,5.96-.01,8.94,0,.79-.02.81-.84.81-3.32,0-6.65,0-9.97.01-.57,0-.81-.16-.8-.77.02-3.02.02-6.04,0-9.06,0-.56.23-.72.75-.71,1.7.02,3.4,0,5.1,0Z"/>
+        <path class="EqcolLogo-1" d="m506.5,51.65c-4.35-.01-7.79-3.43-7.79-7.76,0-4.36,3.5-7.81,7.9-7.78,4.3.03,7.75,3.53,7.73,7.84-.02,4.33-3.46,7.71-7.84,7.7Z"/>
+        <path class="EqcolLogo-1" d="m510.42,48.43c-.73,0-1.32,0-1.91,0-.42,0-.58-.3-.75-.59-.44-.75-.87-1.5-1.32-2.25-.16-.27-.34-.54-.71-.4-.33.12-.22.44-.23.69-.01.68-.01,1.36,0,2.04,0,.32-.12.5-.46.5-.11,0-.23,0-.34,0-1.48,0-1.23,0-1.24-1.2,0-2.3,0-4.61,0-6.91,0-.81.02-.83.81-.84,1.1,0,2.19-.02,3.29.04,1.32.08,2.17.72,2.5,1.78.38,1.21,0,2.46-1.09,3.19-.53.35-.53.59-.22,1.07.57.87,1.15,1.75,1.67,2.86Zm-4.92-6.21c0,.23,0,.45,0,.68,0,.2.07.4.3.42.64.05,1.28.13,1.87-.21.38-.22.48-.57.44-.96-.04-.41-.28-.7-.69-.79-.29-.06-.6-.08-.9-.09-1.01-.02-1.02-.01-1.02.96Z"/>
+      </g>
+      <g>
+        <path class="EqcolLogo-3" d="m57.37,130.42c-.93-.55-1.99-.77-2.96-1.23-2.78-1.32-5.37-2.96-8.04-4.48-4.7-2.66-9.4-5.32-14.06-8.04-4.5-2.63-9.16-5-13.5-7.89-5.31-3.54-8.76-8.5-10.56-14.62-.69-2.36-.96-4.77-.96-7.23.02-11.95.01-23.91,0-35.86,0-8.02,3.1-14.64,8.99-20,1.51-1.37,3.23-2.46,5-3.47,6.49-3.71,12.96-7.44,19.45-11.14,4.18-2.38,8.35-4.77,12.56-7.1,2.48-1.37,5.18-2.17,7.98-2.6.18-.03.35-.11.52-.17,1.41-.03,2.81-.07,4.22-.08,4.64-.04,8.9,1.3,12.9,3.55,4.22,2.38,8.4,4.82,12.6,7.23,6.48,3.72,12.99,7.37,19.42,11.17,4.79,2.83,8.21,6.93,10.45,12.03,1.57,3.58,2.2,7.33,2.19,11.23-.03,11.65,0,23.31-.01,34.96-.01,7.63-2.77,14.13-8.21,19.48-1.83,1.8-3.99,3.18-6.21,4.45-4.33,2.48-8.67,4.96-13,7.44-5.84,3.34-11.66,6.72-17.53,10.02-5.8,3.26-11.99,4.25-18.54,2.94-.91-.18-1.77-.55-2.71-.57Zm55.36-61.47c0-5.33-.02-10.66,0-15.99,0-2.02-.31-3.98-.93-5.89-1.58-4.83-4.65-8.43-9.04-10.95-3.5-2-7.01-3.98-10.51-5.98-5.61-3.22-11.22-6.46-16.83-9.67-2.6-1.49-5.35-2.46-8.38-2.68-3.56-.27-6.96.25-10.12,1.9-2.98,1.56-5.88,3.27-8.8,4.94-6.68,3.82-13.35,7.64-20.01,11.49-6.59,3.8-9.96,9.56-10.03,17.12-.1,10.47-.02,20.95-.03,31.42,0,1.34.12,2.66.39,3.97,1.16,5.68,4.26,9.99,9.23,12.97,1.52.91,3.07,1.79,4.61,2.67,7.67,4.4,15.33,8.81,23.02,13.18,6.58,3.74,13.24,3.82,19.89.19,3.05-1.66,6.04-3.44,9.06-5.17,5.9-3.39,11.8-6.79,17.71-10.16,2.26-1.29,4.4-2.73,6.1-4.74,3.1-3.68,4.68-7.91,4.67-12.74-.01-5.29,0-10.58,0-15.88Z"/>
+        <path class="EqcolLogo-3" d="m79.45,74.33c-6.07,0-12.15-.01-18.22,0-1.69,0-3.15-.5-4.25-1.79-1.36-1.58-1.8-3.4-1.05-5.37.79-2.08,2.34-3.28,4.57-3.53.4-.04.81-.02,1.22-.02,8.3,0,16.59,0,24.89,0,1.38,0,1.43-.05,1.01-1.36-1.64-5.07-4.69-9.09-9.05-12.14-3.12-2.18-6.58-3.55-10.35-4-5.04-.61-9.81.34-14.21,2.9-5.38,3.13-9.1,7.65-10.85,13.63-2.07,7.06-.74,13.63,3.41,19.63,2.61,3.77,6.09,6.52,10.41,8.16,4.71,1.79,9.5,2.11,14.38.78,3.97-1.08,7.45-3.04,10.39-5.93.4-.39.8-.61,1.36-.61,3.81.01,7.63,0,11.44,0,.15,0,.3,0,.44.01.29.02.4.18.3.44-.08.21-.21.39-.32.58-3.31,5.67-7.87,10.01-13.69,13.07-6,3.16-12.39,4.43-19.11,3.84-6.69-.59-12.7-3.04-17.97-7.22-4.04-3.2-7.18-7.13-9.45-11.75-2.36-4.8-3.52-9.89-3.34-15.24.26-8.07,2.97-15.24,8.2-21.44,4.72-5.6,10.75-9.1,17.81-10.81,4.16-1.01,8.39-1.22,12.67-.64,8.2,1.12,15.01,4.82,20.55,10.88,4.48,4.89,7.31,10.65,8.41,17.2.55,3.26.62,6.55.1,9.83-.13.83-.13.85-.95.85-2.07.01-4.15,0-6.22,0-4.18,0-8.37,0-12.55,0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
+		</div>
+	
+		<!-- bookTipAct is drag instuction for notebook - start -->
+		<div id="bookTipAct" class="bookTipAct">&nbsp;&nbsp;Drag book down and drop &#x1F447;&nbsp;&nbsp;</div>
+		<!-- bookTipAct is drag instuction for notebook - end -->
+	
+</div>
+<!-- FootBottom end -->
+	
+<!-- book pages script start -->
+<script>//book script
+	
+// References to DOM Elements
+const prevBtn = document.querySelector("#prev-btn");
+const nextBtn = document.querySelector("#next-btn");
+const book = document.querySelector("#book");
+
+const paper1 = document.querySelector("#p1");
+const paper2 = document.querySelector("#p2");
+const paper3 = document.querySelector("#p3");
+const paper4 = document.querySelector("#p4");
+
+// Event Listener
+prevBtn.addEventListener("click", goPrevPage);
+nextBtn.addEventListener("click", goNextPage);
+
+// Business Logic
+let currentLocation = 1;
+let numOfPapers = 4;
+let maxLocation = numOfPapers + 1;
+
+function openBook() {
+	// original setting was: book.style.transform = "translateX(50%)"; but I changed it to book.style.transform = "translateX(0%)"; so the book will not move when page is opened
+    book.style.transform = "translateX(0)";
+	// original setting same as book for these buttons - changing the X coordinate value to 0 prevents the buttons from moving when active
+    prevBtn.style.transform = "translateX(0)";
+    nextBtn.style.transform = "translateX(0)";
+}
+
+function closeBook(isAtBeginning) {
+	// changing X coordinate value to 0 prevents the buttons from moving when active
+    if(isAtBeginning) {
+        book.style.transform = "translateX(0)";
+    } else {
+        book.style.transform = "translateX(0)";
+    }
+    
+    prevBtn.style.transform = "translateX(0)";
+    nextBtn.style.transform = "translateX(0)";
+}
+
+function goNextPage() {
+	// add cases to add page number
+    if(currentLocation < maxLocation) {
+        switch(currentLocation) {
+            case 1:
+                openBook();
+                paper1.classList.add("flipped");
+                paper1.style.zIndex = 1;
+                break;
+            case 2:
+                paper2.classList.add("flipped");
+                paper2.style.zIndex = 2;
+                break;
+            case 3:
+                paper3.classList.add("flipped");
+                paper3.style.zIndex = 3;
+                break;
+			case 4:
+                paper4.classList.add("flipped");
+                paper4.style.zIndex = 4;
+				closeBook(false);
+                break;	
+            default:
+                throw new Error("unkown state");
+        }
+        currentLocation++;
+    }
+}
+
+function goPrevPage() {
+    if(currentLocation > 1) {
+        switch(currentLocation) {
+            case 2:
+                closeBook(true);
+                paper1.classList.remove("flipped");
+                paper1.style.zIndex = 4;
+                break;
+            case 3:
+                paper2.classList.remove("flipped");
+                paper2.style.zIndex = 3;
+                break;
+            case 4:
+                openBook();
+                paper3.classList.remove("flipped");
+                paper3.style.zIndex = 2;
+                break;
+			 case 5:
+                openBook();
+                paper4.classList.remove("flipped");
+                paper4.style.zIndex = 1;
+                break;
+				closeBook(false);
+            default:
+                throw new Error("unkown state");
+        }
+
+        currentLocation--;
+    }
+}	
+	
+</script>
+<!-- book pages script end -->
+	
+<!-- qualification slider script start -->
+<script>
+	
+var qualSlider = document.getElementById('qualSlider'),
+    qualSliderItems = document.getElementById('qualItems'),
+    qualPrev = document.getElementById('qualPrev'),
+    qualNext = document.getElementById('qualNext');
+
+slide(qualSlider, qualSliderItems, qualPrev, qualNext);
+
+function slide(qualWrapper, qualItems, qualPrev, qualNext) {
+  var posX1 = 0,
+      posX2 = 0,
+      posInitial,
+      posFinal,
+      threshold = 100,
+      slides = qualItems.getElementsByClassName('qualSlide'),
+      slidesLength = slides.length,
+      slideSize = qualItems.getElementsByClassName('qualSlide')[0].offsetWidth,
+      firstSlide = slides[0],
+      lastSlide = slides[slidesLength - 1],
+      cloneFirst = firstSlide.cloneNode(true),
+      cloneLast = lastSlide.cloneNode(true),
+      index = 0,
+      allowShift = true;
+  
+  // Clone first and last slide
+  qualItems.appendChild(cloneFirst);
+  qualItems.insertBefore(cloneLast, firstSlide);
+  qualWrapper.classList.add('loaded');
+  
+  // Mouse and Touch events
+  qualItems.onmousedown = dragBook;
+  
+  // Touch events
+  qualItems.addEventListener('touchstart', dragBook);
+  qualItems.addEventListener('touchend', dragEnd);
+  qualItems.addEventListener('touchmove', dragAction);
+  
+  // Click events
+  qualPrev.addEventListener('click', function () { shiftSlide(-1) });
+  qualNext.addEventListener('click', function () { shiftSlide(1) });
+  
+  // Transition events
+  qualItems.addEventListener('transitionend', checkIndex);
+  
+  function dragBook (e) {
+    e = e || window.event;
+    e.preventDefault();
+    posInitial = qualItems.offsetLeft;
+    
+    if (e.type == 'touchstart') {
+      posX1 = e.touches[0].clientX;
+    } else {
+      posX1 = e.clientX;
+      document.onmouseup = dragEnd;
+      document.onmousemove = dragAction;
+    }
+  }
+
+  function dragAction (e) {
+    e = e || window.event;
+    
+    if (e.type == 'touchmove') {
+      posX2 = posX1 - e.touches[0].clientX;
+      posX1 = e.touches[0].clientX;
+    } else {
+      posX2 = posX1 - e.clientX;
+      posX1 = e.clientX;
+    }
+    qualItems.style.left = (qualItems.offsetLeft - posX2) + "px";
+  }
+  
+  function dragEnd (e) {
+    posFinal = qualItems.offsetLeft;
+    if (posFinal - posInitial < -threshold) {
+      shiftSlide(1, 'drag');
+    } else if (posFinal - posInitial > threshold) {
+      shiftSlide(-1, 'drag');
+    } else {
+      qualItems.style.left = (posInitial) + "px";
+    }
+
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+  
+  function shiftSlide(dir, action) {
+    qualItems.classList.add('shifting');
+    
+    if (allowShift) {
+      if (!action) { posInitial = qualItems.offsetLeft; }
+
+      if (dir == 1) {
+        qualItems.style.left = (posInitial - slideSize) + "px";
+        index++;      
+      } else if (dir == -1) {
+        qualItems.style.left = (posInitial + slideSize) + "px";
+        index--;      
+      }
+    };
+    
+    allowShift = false;
+  }
+    
+  function checkIndex (){
+    qualItems.classList.remove('shifting');
+
+    if (index == -1) {
+      qualItems.style.left = -(slidesLength * slideSize) + "px";
+      index = slidesLength - 1;
+    }
+
+    if (index == slidesLength) {
+      qualItems.style.left = -(1 * slideSize) + "px";
+      index = 0;
+    }
+    
+    allowShift = true;
+  }
+}
+	
+</script>
+<!-- qualification slider script end -->
+
+<!-- bookScroll script start -->
+<script>//bookScroll scroll script
+	
+const element = document.getElementById("bookScroll");
+let y = element.scrollHeight;
+let x = element.scrollWidth;
+document.getElementById ("bookContent").innerHTML = "Height: " + y + " Width: " + x;
+
+let x = element.scrollHeight;
+let y = element.scrollWidth;
+document.getElementById ("bookContent").innerHTML = "Height: " + x + " Width: " + y;	
+	
+</script>
+<!-- bookScroll script end -->
+	
+<!-- drag zone script start -->
+<script>
+function dragBook(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+}
+
+function dragging(event) {
+  document.getElementById("bookTip").innerHTML = "Click sides to flip pages, drag down and drop to read all pages &#x263A;";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+  document.getElementById("bookTipAct").innerHTML = "Drag notebook down and drop &#x1F447;";
+  event.target.style.border = "none";
+}
+
+function drop(event) {
+  event.preventDefault();
+  const data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+  document.getElementById("bookTip").innerHTML = "&#128076;";
+}
+	
+function drop(event) {
+  event.preventDefault();
+  const data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+  document.getElementById("bookTipAct").innerHTML = "&#128076;";
+}
+	
+</script>
+<!-- drag zone script end -->	
+
+</body>
+	
+</html>
